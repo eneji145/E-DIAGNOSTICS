@@ -13,6 +13,7 @@ import pandas as pd
 from sqlalchemy import func
 import joblib
 from statistics import mode
+import os
 
 RFC1_path = os.path.join(models_folder, 'RFC.pkl')
 DTC1_path = os.path.join(models_folder, 'DTC.pkl')
