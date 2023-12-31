@@ -14,10 +14,15 @@ from sqlalchemy import func
 import joblib
 from statistics import mode
 
-RFC1 = joblib.load('models\RFC.pkl')
-DTC1 = joblib.load('models\DTC.pkl')
-SVC1 = joblib.load('models\SVC.pkl') 
-NB1 = joblib.load('models\GNB.pkl') 
+RFC1_path = os.path.join(models_folder, 'RFC.pkl')
+DTC1_path = os.path.join(models_folder, 'DTC.pkl')
+SVC1_path = os.path.join(models_folder, 'SVC.pkl')
+NB1_path = os.path.join(models_folder, 'GNB.pkl')
+
+RFC1 = joblib.load(RFC1_path)
+DTC1 = joblib.load(DTC1_path)
+SVC1 = joblib.load(SVC1_path)
+NB1 = joblib.load(NB1_path)
 
 app = Flask(__name__, template_folder='templates')
 
