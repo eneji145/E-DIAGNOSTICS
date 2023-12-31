@@ -15,6 +15,8 @@ import joblib
 from statistics import mode
 import os
 
+models_folder = os.path.join( 'models')
+
 RFC1_path = os.path.join(models_folder, 'RFC.pkl')
 DTC1_path = os.path.join(models_folder, 'DTC.pkl')
 SVC1_path = os.path.join(models_folder, 'SVC.pkl')
